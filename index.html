@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body class="font-nunito bg-white">
+
+    <!-- Hero Section -->
+    <div class="h-[50vh] md:h-screen bg-gradient-to-t from-indigo-200 to-white relative overflow-hidden ">
+
+        <!-- Nav Bar -->
+        <nav class="fixed top-0 bg-white w-full z-50">
+
+            <!-- Nav Container -->
+            <div class="container mx-auto py-5 px-4 lg:py-5 lg:px-20 flex justify-between items-center">
+
+                <!-- Logo + Title -->
+                <div class="flex items-center gap-2">
+                    <img class="h-8" src="./img/logo.svg">
+                    <span class="text-lg font-bold text-indigo-900">My Portfolio</span>
+                </div>
+
+                <!-- Nav Links (Desktop) -->
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold">
+                    <li class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1"><a href="#">Homepage</a></li>
+                    <li class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1"><a href="#">About Me</a></li>
+                    <li class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1"><a href="#">Projects</a></li>
+                    <li class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1"><a href="#">Contact</a></li>
+                </ul>
+
+                <!-- Right Side Icons -->
+                <div class="flex items-center gap-3">
+                    <img class="h-7 cursor-pointer" src="./img/light-moon.svg">
+                    <div id="hamburger" class="md:hidden cursor-pointer">
+                        <img class="h-6 w-6" src="./img/bars.svg">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul id="menu" class="hidden flex-col bg-indigo-500 rounded-b-3xl absolute space-y-6 text-white text-center w-full p-10 md:hidden">
+                <li class="hover:text-indigo-200"><a href="#">Homepage</a></li>
+                <li class="hover:text-indigo-200"><a href="#">About Me</a></li>
+                <li class="hover:text-black"><a href="#">Projects</a></li>
+                <li class="hover:text-indigo-200"><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
+      <!-- Profile Image -->
+<img class=" absolute bottom-0 right-0 lg:left-0 lg:right-0 lg:mx-auto h-4/6 object-cover md:h-4/6 lg:h-4/6 z-20" src="./img/image.png">
+
+<!-- Circle -->
+<div class="hidden lg:block absolute -bottom-60 w-big h-big left-0 right-0 mx-auto bg-gradient-to-t from-white  to-indigo-300 rounded-full z-10 "></div>
+
+        
+<!-- Text Content -->
+<div class="absolute top-1/2 -translate-y-1/2 left-5 
+            sm:left-10 
+            md:left-16 
+            lg:left-20">
+    <h1 class="text-2xl font-bold text-indigo-900 
+               sm:text-3xl 
+               md:text-4xl 
+               lg:text-5xl">Websites</h1>
+    <p class="text-red-600 
+              sm:text-lg 
+              md:text-xl 
+              lg:text-2xl"> Developer</p>
+</div>
+
+<div class=" hidden lg:flexbg-white absolute top-1/2 ">
+    <h1>Hi,I am Fizza</h1>
+<p> I can develop websites using HTml Css and  TailwindCss with concepts of Css </p>
+<a href="#contact">Hire Me</a>
+
+</div>
+    
+
+<script src="app.js"></script>
+</body>
+</html>
