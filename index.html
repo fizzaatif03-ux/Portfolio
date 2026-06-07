@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="output.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
+      <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">   
 </head>
 
 <body class="font-nunito bg-white">
 
     <!-- Hero Section -->
-    <div class="h-[50vh] md:h-screen bg-gradient-to-t from-indigo-200 to-white relative overflow-hidden ">
+    <div id="home" class="h-[50vh] md:h-screen bg-gradient-to-t from-indigo-200 to-white relative overflow-hidden ">
 
         <!-- Nav Bar -->
-        <nav class="fixed top-0 bg-white w-full z-50">
+        <nav class="fixed top-0 bg-white dark w-full z-50">
 
             <!-- Nav Container -->
             <div class="container mx-auto py-5 px-4 lg:py-5 lg:px-20 flex justify-between items-center">
@@ -31,16 +34,16 @@
                 <ul class="hidden md:flex space-x-10 text-gray-600 font-bold">
                     <li
                         class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1">
-                        <a href="#">Homepage</a></li>
+                        <a href="#home">Homepage</a></li>
                     <li
                         class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1">
-                        <a href="#">About Me</a></li>
+                        <a href="#about">About Me</a></li>
                     <li
                         class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1">
-                        <a href="#">Projects</a></li>
+                        <a href="#project">Projects</a></li>
                     <li
                         class="hover:text-gray-500 hover:underline transition-transform duration-200 hover:-translate-y-1">
-                        <a href="#">Contact</a></li>
+                        <a href="#contact">Contact</a></li>
                 </ul>
 
                 <!-- Right Side Icons -->
@@ -56,10 +59,10 @@
             <!-- Mobile Menu -->
             <ul id="menu"
                 class="hidden flex-col bg-indigo-500 rounded-b-3xl absolute space-y-6 text-white text-center w-full p-10 md:hidden">
-                <li class="hover:text-indigo-200"><a href="#">Homepage</a></li>
-                <li class="hover:text-indigo-200"><a href="#">About Me</a></li>
-                <li class="hover:text-black"><a href="#">Projects</a></li>
-                <li class="hover:text-indigo-200"><a href="#">Contact</a></li>
+                <li id="hLink" class="hover:text-indigo-200"><a href="#home">Homepage</a></li>
+                <li id="hLink" class="hover:text-indigo-200"><a href="#about">About Me</a></li>
+                <li id="hLink" class="hover:text-indigo-200"><a href="#project">Projects</a></li>
+                <li id="hLink" class="hover:text-indigo-200"><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -92,13 +95,13 @@
 
         <div class=" lg:flex h-fit bg-white absolute top-0 bottom-0 m-auto  z-30  w-[350px] lg:flex-col  right-32  p-10 hidden ">
             <h1>Hi,I am Fizza</h1>
-            <p> I can develop websites using HTml Css and TailwindCss with concepts of Css </p>
-            <a class="bg-indigo-900 text-white p-2 rounded-1 w-1/2 items-center flex "   href="#contact">Hire Me</a>
+            <p class="mb-2">   a Web Developer who builds modern and responsive websites. I focus on clean design and good user experience. </p>
+            <a class="bg-indigo-900 text-white p-2 rounded-1 w-1/2 items-center justify-center flex "   href="#contact">Hire Me</a>
         </div>
     </div>
 
 <!-- About me -->
- <div class="w-full flex justify-center py-20 bg-gray-50">
+ <div id="about" class="w-full flex justify-center py-20 bg-gray-50 mt-10">
 
     <div class="w-full max-w-6xl flex flex-col-reverse md:flex-row md:items-center md:justify-between gap-16 px-6">
 
@@ -156,11 +159,11 @@
 
 </div>
     <!-- My Projects -->
-    <div>
+    <div id="project">
         <div class="container mx-auto">
             <!-- top -->
              <div class="flex flex-col items-center">
-            <h1 class="text-3xl font-bold mb-3 text-center mt-32" > My Projects</h1>
+            <h1 class="text-3xl font-bold mb-3 text-center mt-32 text-gray-900" > My Projects</h1>
             <p class="w-1/2 text-center justify-content text-gray-400">
                 Here are some of the projects I have worked on.
             </p>
@@ -203,7 +206,7 @@
         </div>
     </div>
  <!-- Contact Section -->
-<div class="w-full flex justify-center items-center py-20">
+<div id="contact" class="w-full flex justify-center items-center py-20 mb-20">
     <div class="container mx-auto px-4 flex flex-col items-center justify-center">
         
         <!-- Top -->
@@ -217,57 +220,67 @@
             <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm" type="text" placeholder="Name Surname">
             <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm" type="email" placeholder="Email">
             <textarea class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm h-32" placeholder="Your Message"></textarea>
-            <button class="bg-indigo-500 text-white py-2 px-6 rounded-sm" type="submit">Send Message</button>
+            <button class="bg-indigo-500 text-white py-2 px-6 rounded-sm" type="submit" >Send Message </button>
         </form>
 
     </div>
 </div>
-<div>
+
 <!-- Social Accounts -->
-<div>
-    <h1>Connect Me On Social Media</h1>
-<!-- gmail -->
- <a href="mailto:fizzaatif03@gmail.com" target="_blank">Gmail</a>
-<!-- linkden -->
- <a href="https://www.linkedin.com/in/fizza-shahbaz-5815b1320" target="_blank">LinkedIn</a>
- <!-- github -->
-  <a href="https://github.com/fizzashahbaz" target="_blank">GitHub</a>
-  <!-- whatsapp -->
-    <a href="https://wa.me/+923212322449" target="_blank">WhatsApp</a>
+<div class="flex flex-col ld:flex  items-center justify-center gap-4 mb-20">
+    <h1 class="text-2xl font-bold text-indigo-900 mb-8 ">Connect Me On Social Media</h1>
+    
+    <!-- Gmail -->
+    <a href="mailto:fizzaatif03@gmail.com" target="_blank"
+        class="bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-all hover:-translate-y-1 flex items-center gap-2">
+        <i class="fa-solid fa-envelope"></i>
+        Gmail
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/fizza-shahbaz-5815b1320" target="_blank"
+        class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-all hover:-translate-y-1 flex items-center gap-2">
+        <i class="fa-brands fa-linkedin"></i>
+        LinkedIn
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/fizzashahbaz" target="_blank"
+        class="bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-all hover:-translate-y-1 flex items-center gap-2">
+        <i class="fa-brands fa-github"></i>
+        GitHub
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923212322449" target="_blank"
+        class="bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-md shadow-sm transition-all hover:-translate-y-1 flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp"></i>
+        WhatsApp
+    </a>
+
 </div>
-</div>
 
 
+<!-- Footer -->
+<footer class="bg-gray-800 py-8">
 
+    <div class="container mx-auto text-center">
 
+        <h2 class="text-white text-xl font-semibold">
+            Made with ❤️ by Fizza
+        </h2>
 
+        <p class="text-gray-400 mt-2">
+            Building beautiful and responsive web experiences.
+        </p>
 
-     <!-- Footer -->
-      <footer>
-         <div class="w-full bg-gray-800">
+        <p class="text-gray-500 text-sm mt-4">
+            © 2026 All Rights Reserved
+        </p>
 
-            <!-- Nav Container -->
-            <div class="container py-5">
+    </div>
 
-                <!-- Logo + Title -->
-                <div class="flex  gap-2">
-                    <img class="h-8" src="./img/logo.svg">
-                    <span class="text-lg font-bold text-white">Fizza</span>
-                    <span class=" block text-white text-center ">All Rights Reserved 2026 </span>
-                </div>
-
-                
-
-                
-
-        </div>
-
-
-
-
-
-      </footer>
-
+</footer>
 
     <script src="app.js"></script>
 </body>
